@@ -22,6 +22,7 @@ Usefull stuff
 * https://github.com/kartenkarsten/leaflet-layer-overpass
 * http://wiki.openstreetmap.org/wiki/MapCSS
 * http://wiki.openstreetmap.org/wiki/Overpass_turbo
+* http://codepen.io/swirlycheetah/pen/cFtzb
 
 
 Credits
