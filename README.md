@@ -9,7 +9,7 @@ Components
 
 Architecture
 -------------
-* OSM DATA -> overpass -> leaflet
+* OSM DATA <- overpass <- OverPassLayer <- leaflet
 
 
 Usefull stuff
@@ -20,3 +20,10 @@ Usefull stuff
 * https://www.openstreetmap.org/#map=19/44.44731/26.10552&layers=D
 * http://leafletjs.com/examples/quick-start.html
 * https://github.com/kartenkarsten/leaflet-layer-overpass
+* http://wiki.openstreetmap.org/wiki/MapCSS
+* http://wiki.openstreetmap.org/wiki/Overpass_turbo
+
+
+Credits
+------------
+* Icons Created by Eric Standley for the Noun Project
