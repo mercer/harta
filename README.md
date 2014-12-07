@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mercer/harta.svg)](https://travis-ci.org/mercer/harta)
+
 About
 -----------
 A mobile friendly web app that visualizes Bucharest centered POI categories.
