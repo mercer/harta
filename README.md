@@ -1,11 +1,16 @@
 About
 -----------
-A layered view of various Bucharest features.
+A mobile friendly web app that visualizes Bucharest centered POI categories.
+
+Categories
+-------------
+* Non-stop pharmacies
+* more tbd
 
 Components
 --------------
-* data import
-* application
+* application: this web app, offers a map-based visualization POI categories centered on Bucharest  
+* data import: tbd app that would facilitate data import/data insert for desired POIs
 
 Developers
 -----------
@@ -15,10 +20,11 @@ Developers
 * install globally grunt, yo, bower-cli
 * bower install & npm install
 * grunt serve
+* open http://localhost:9000/#/
 
 Architecture
 -------------
-* OSM DATA <- overpass <- OverPassLayer <- leaflet
+* OSM data <- overpass <- OverPassLayer <- leaflet
 
 Resources
 ---------------
@@ -31,6 +37,7 @@ Resources
 * http://wiki.openstreetmap.org/wiki/MapCSS
 * http://wiki.openstreetmap.org/wiki/Overpass_turbo
 * http://codepen.io/swirlycheetah/pen/cFtzb
+* https://github.com/tombatossals/angular-leaflet-directive
 
 Credits
 ------------
