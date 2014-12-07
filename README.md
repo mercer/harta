@@ -24,6 +24,13 @@ Developers
 * grunt serve
 * open http://localhost:9000/#/
 
+To update the app on gh-pages
+--------------------------------
+* grunt build
+* git checkout gh-pages
+* git add -A && git commit -m "update to new version" && git push
+* git checkout master
+
 Architecture
 -------------
 * OSM data <- overpass <- OverPassLayer <- leaflet
