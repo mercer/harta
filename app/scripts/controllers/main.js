@@ -24,21 +24,20 @@ angular.module('hartaApp')
       });
     }
 
-    angular.element(document).ready(function () {
-      var categories = [
-        //{name: 'tourism=museum', icon: 'envelope.jpg'},
-        //{name: 'amenity=drinking_water', icon: 'envelope.jpg'},
-        {query: '[amenity=pharmacy][opening_hours="24/7"]', icon: 'Map_symbol-pin.svg'}
-      ];
-      var attrOsm = 'Map data &copy; <a href="https://openstreetmap.org/">OpenStreetMap</a> contributors',
-        attrOverpass = 'POI via <a href="https://www.overpass-api.de/">Overpass API</a>';
-      var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        opacity: 0.7,
-        attribution: [attrOsm, attrOverpass].join(', ')
-      });
-      var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(44.4358, 26.1013), 15);
+    $scope.categories = [
+      {name: 'Pharmacies', query: '[amenity=pharmacy][opening_hours="24/7"]', icon: 'Map_symbol-pin.svg'},
+      {name: 'Museums', query: 'tourism=museum', icon: 'Map_pin_icon.jpg'}
+    ];
+    var attrOsm = 'Map data &copy; <a href="https://openstreetmap.org/">OpenStreetMap</a> contributors',
+      attrOverpass = 'POI via <a href="https://www.overpass-api.de/">Overpass API</a>';
+    var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      opacity: 0.7,
+      attribution: [attrOsm, attrOverpass].join(', ')
+    });
 
-      var pharmacy = fetchNewLayer(categories[0]);
+    angular.element(document).ready(function () {
+      var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(44.4358, 26.1013), 15);
+      var pharmacy = fetchNewLayer($scope.categories[0]);
       map.addLayer(pharmacy);
     });
 
