@@ -27,7 +27,7 @@ angular.module('hartaApp')
           this.instance._ids[e.id] = true;
           var pos = new L.LatLng(e.lat, e.lon);
           var myIcon = L.icon({
-            iconUrl: 'images/' + category.icon,
+            iconUrl: 'images/icons/' + category.icon,
             iconSize: [16, 16]
           });
           L.marker(pos, {icon: myIcon}).addTo(this.instance);
