@@ -7,12 +7,20 @@ Components
 * data import
 * application
 
+Developers
+-----------
+* clone
+* install npm, ruby
+* install compass gem
+* install globally grunt, yo, bower-cli
+* bower install & npm install
+* grunt serve
+
 Architecture
 -------------
 * OSM DATA <- overpass <- OverPassLayer <- leaflet
 
-
-Usefull stuff
+Resources
 ---------------
 * http://overpass-turbo.eu/
 * http://overpass-api.de/
@@ -23,7 +31,6 @@ Usefull stuff
 * http://wiki.openstreetmap.org/wiki/MapCSS
 * http://wiki.openstreetmap.org/wiki/Overpass_turbo
 * http://codepen.io/swirlycheetah/pen/cFtzb
-
 
 Credits
 ------------
