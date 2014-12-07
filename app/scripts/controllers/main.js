@@ -16,7 +16,7 @@ angular.module('hartaApp')
     ];
     function fetchNewLayer(category) {
       return new L.OverPassLayer({
-      query: 'http://overpass-api.de/api/interpreter?data=[out:json];node(BBOX)[' + category.name + '];out;',
+      query: 'https://overpass-api.de/api/interpreter?data=[out:json];node(BBOX)[' + category.name + '];out;',
       callback: function(data) {
         for (var i = 0; i < data.elements.length; i++) {
           var e = data.elements[i];
@@ -37,9 +37,9 @@ angular.module('hartaApp')
     }
 
     var categories = [{name: 'tourism=museum', icon: 'envelope.jpg'}, {name: 'amenity=drinking_water', icon: 'envelope.jpg'}];
-    var attrOsm = 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
-        attrOverpass = 'POI via <a href="http://www.overpass-api.de/">Overpass API</a>';
-    var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attrOsm, attrOverpass].join(', ')});
+    var attrOsm = 'Map data &copy; <a href="https://openstreetmap.org/">OpenStreetMap</a> contributors',
+        attrOverpass = 'POI via <a href="https://www.overpass-api.de/">Overpass API</a>';
+    var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attrOsm, attrOverpass].join(', ')});
     var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(44.4358, 26.1013), 15);
 
     var museums = fetchNewLayer(categories[0]);
