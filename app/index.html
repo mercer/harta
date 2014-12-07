@@ -23,12 +23,14 @@
   </head>
   <body ng-app="hartaApp">
   <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-    <a class="navmenu-brand visible-md visible-lg" href="#">Harta Bucuresti</a>
+    <a class="navmenu-brand visible-md visible-lg" href="#/">Harta Bucuresti</a>
     <ul class="nav navmenu-nav">
+      <li class="active"><a href="#/">Home</a></li>
       <li><a href="#/about">About</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
     </ul>
+    <div class="footer">
+      <p><span class="glyphicon glyphicon-heart"></span> Bucuresti</p>
+    </div>
   </div>
 
   <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
@@ -37,16 +39,11 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Harta Bucuresti</a>
+    <a class="navbar-brand" href="#/">Harta Bucuresti</a>
   </div>
 
-  <div class="container">
-
-    <div ng-view=""></div>
-
-    <div class="footer">
-      <p><span class="glyphicon glyphicon-heart"></span> Bucuresti</p>
-    </div>
+  <div class="container fill">
+    <div ng-view="" class="fill"></div>
   </div>
 
     <!-- build:js(.) scripts/oldieshim.js -->

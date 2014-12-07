@@ -49,7 +49,11 @@ Resources
 * http://wiki.openstreetmap.org/wiki/Overpass_turbo
 * http://codepen.io/swirlycheetah/pen/cFtzb
 * https://github.com/tombatossals/angular-leaflet-directive
+* http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL
+* http://ypid.de/~osm/evaluation_tool/
+* http://wiki.openstreetmap.org/wiki/Key:opening_hours
 
 Credits
 ------------
-* Icons Created by Eric Standley for the Noun Project
+* Envelope icon created by Eric Standley for the Noun Project
+* Pin icon created by https://commons.wikimedia.org/wiki/User:Mono
