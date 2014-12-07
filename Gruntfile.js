@@ -353,10 +353,14 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.',
           src: [
-            'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
             'bower_components/leaflet-layer-overpass/OverPassLayer.js'
             ],
           dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: 'bower_components/bootstrap/dist/fonts/',
+          src: ['**'],
+          dest: '<%= yeoman.dist %>/fonts'
         }]
       },
       styles: {
