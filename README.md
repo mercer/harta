@@ -16,20 +16,22 @@ Components
 
 Developers
 -----------
-* clone
-* install npm, ruby
+* clone the repo
+* install npm, ruby or ruby-devel
 * install compass gem
 * install globally grunt, yo, bower-cli
 * bower install & npm install
-* grunt serve
-* open http://localhost:9000/#/
+* to run the app locally, grunt serve and open http://0.0.0.0:9000/#/
+* to run the tests, grunt test
+* the CI build is on travis: https://travis-ci.org/mercer/harta
+* to create a distribution, grunt build
 
 Release on gh-pages
 --------------------------------
-* clone the project to GH_PAGES_REPO_PATH
+* make sure all is commited and the travis build is green
+* make a clone the project to GH_PAGES_REPO_PATH
 * git checkout gh-pages
-* go back the main project path
-* ./release.sh GH_PAGES_REPO_PATH
+* go back the main project with master branch path and run ./release.sh GH_PAGES_REPO_PATH
 
 Architecture
 -------------
