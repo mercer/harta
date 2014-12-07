@@ -35,18 +35,24 @@ angular.module('hartaApp')
       }
     });
     }
-
-    var categories = [{name: 'tourism=museum', icon: 'envelope.jpg'}, {name: 'amenity=drinking_water', icon: 'envelope.jpg'}];
-    var attrOsm = 'Map data &copy; <a href="https://openstreetmap.org/">OpenStreetMap</a> contributors',
+    angular.element(document).ready(function () {
+      var categories = [{name: 'tourism=museum', icon: 'envelope.jpg'}, {
+        name: 'amenity=drinking_water',
+        icon: 'envelope.jpg'
+      }];
+      var attrOsm = 'Map data &copy; <a href="https://openstreetmap.org/">OpenStreetMap</a> contributors',
         attrOverpass = 'POI via <a href="https://www.overpass-api.de/">Overpass API</a>';
-    var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {opacity: 0.7, attribution: [attrOsm, attrOverpass].join(', ')});
-    var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(44.4358, 26.1013), 15);
+      var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        opacity: 0.7,
+        attribution: [attrOsm, attrOverpass].join(', ')
+      });
+      var map = new L.Map('map').addLayer(osm).setView(new L.LatLng(44.4358, 26.1013), 15);
 
-    var museums = fetchNewLayer(categories[0]);
-    map.addLayer(museums);
+      var museums = fetchNewLayer(categories[0]);
+      map.addLayer(museums);
 
-    var water = fetchNewLayer(categories[1]);
-    map.addLayer(water);
-
+      var water = fetchNewLayer(categories[1]);
+      map.addLayer(water);
+    });
 
   });
